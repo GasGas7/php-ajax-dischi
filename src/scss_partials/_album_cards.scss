@@ -1,0 +1,34 @@
+/* Albums cards */
+.carta{
+    padding:10px;
+    min-height: fit-content;
+    max-width: 270px;
+}
+.contenitore_copertina{
+    height: 250px;
+}
+.copertina{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-height: 270px;
+    min-width: 200px;
+}
+.Playlist>div{
+    background-color: #2e3a46;
+}
+.titolo{
+    height: 30px;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color:white
+}
+.author_year_p{
+    margin: 30px 0;
+}
+.author_year_p p{
+    margin:0;
+    font-weight: 500;
+    color: gray;
+}
+/* Albums cards */

@@ -10,16 +10,15 @@
 var app = new Vue({
   el: '#app',
   data: {
-    url: "/../dist/PHP_partials/api.php",
     albums: []
   },
   methods: {},
   mounted: function mounted() {
     var _this = this;
 
-    axios.get(this.url).then(function (resp) {
-      console.log(resp.database);
-      _this.albums = resp.database;
+    axios.get('../dist/PHP_partials/api/api.php').then(function (resp) {
+      console.log(resp.data);
+      _this.albums = resp.data;
       console.log(_this.albums);
     })["catch"](function (e) {
       console.error(e);

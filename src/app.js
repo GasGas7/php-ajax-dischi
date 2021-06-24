@@ -3,7 +3,6 @@ const app = new Vue({
     el: '#app',
 
     data: {
-        url: "/../dist/PHP_partials/api.php",
         albums: [],
     },
     methods: {
@@ -11,10 +10,10 @@ const app = new Vue({
     },
     mounted() {
         axios
-            .get(this.url)
+            .get('../dist/PHP_partials/api/api.php')
             .then(resp => {
-                console.log(resp.database);
-                this.albums = resp.database;
+                console.log(resp.data);
+                this.albums = resp.data;
                 console.log(this.albums)
             }).catch(e => {
                 console.error(e);

@@ -1,0 +1,29 @@
+{
+  "name": "php-ajax-dischi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "mix --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GasGas7/php-ajax-dischi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GasGas7/php-ajax-dischi/issues"
+  },
+  "homepage": "https://github.com/GasGas7/php-ajax-dischi#readme",
+  "devDependencies": {
+    "laravel-mix": "^6.0.24",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0"
+  }
+}

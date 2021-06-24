@@ -9,9 +9,23 @@
 
 var app = new Vue({
   el: '#app',
-  data: {},
+  data: {
+    url: "/../dist/PHP_partials/api.php",
+    albums: []
+  },
   methods: {},
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get(this.url).then(function (resp) {
+      console.log(resp.database);
+      _this.albums = resp.database;
+      console.log(_this.albums);
+    })["catch"](function (e) {
+      console.error(e);
+      alert("La chiamata all'API non è andata a buon fine, riprova più tardi");
+    });
+  }
 });
 
 /***/ }),

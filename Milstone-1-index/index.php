@@ -5,7 +5,3 @@
     @require __DIR__ . '/../dist/PHP_partials/template/main.php';
     @require __DIR__ . '/../dist/PHP_partials/template/footer.php';
 ?>
-
-</body>
-
-</html>

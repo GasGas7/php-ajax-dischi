@@ -16,7 +16,7 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('../dist/PHP_partials/api/api.php').then(function (resp) {
+    axios.get('../src/PHP_partials/api/api.php').then(function (resp) {
       console.log(resp.data);
       _this.albums = resp.data;
       console.log(_this.albums);

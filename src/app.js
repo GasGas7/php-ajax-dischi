@@ -10,7 +10,7 @@ const app = new Vue({
     },
     mounted() {
         axios
-            .get('../dist/PHP_partials/api/api.php')
+            .get('../src/PHP_partials/api/api.php')
             .then(resp => {
                 console.log(resp.data);
                 this.albums = resp.data;
